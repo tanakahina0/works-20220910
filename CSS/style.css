@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 /* すべてのwebページに適用される */
 body {
@@ -69,7 +69,7 @@ img{
 .header-inner {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: right;
 	height: 60px;
 	padding: 0 0.8em;
 	margin: 0 auto;
@@ -106,7 +106,7 @@ img{
 	border-radius: 3px;
 }
   
-.form2 {
+/* .form2 {
 	position: relative;
 }
 
@@ -140,8 +140,42 @@ img{
 	background: inherit;
 	border: 0;
 	opacity: 0.54;
+} */
+.search_container{
+	position: relative;
+	box-sizing: border-box;
+  }
+  .search_container input[type="text"]{
+	border: none;
+	height: 1.2em;
+  }
+.search_container input[type="text"]:focus {
+	outline: 0;
 }
-
+.search_container{
+	border: 2px solid #EE817B;
+	padding: 3px 5px;
+	border-radius: 20px;
+	height: 2.0em;
+	width: 265px;
+	overflow: hidden;
+}
+.search_container input[type="submit"]{
+	cursor: pointer;
+	font-family: FontAwesome;
+	border: none;
+	background: #EE817B;
+	color: #fff;
+	position: absolute;
+	width: 3.5em;
+	height: 3.0em;
+	right:0px;
+	top: -4px;
+	outline : none;
+}
+.search_container ::-webkit-input-placeholder {
+	color: #EE817B;
+}
 @media screen and (max-width: 480px) {
 	.header-post {
 	  display: none;
@@ -383,9 +417,6 @@ img{
 }
 
 /* メイン画像 */
-.keyvisual {
-	padding: 10px 0 0 0;
-}
 
 /* 新着アイテム */
 .content-pic {
